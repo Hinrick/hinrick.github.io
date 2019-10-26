@@ -50,30 +50,40 @@
   };
 </script>
 
-  <meta name="description" content="被編譯後的人生">
-<meta property="og:type" content="website">
-<meta property="og:title" content="被編譯後的人生">
-<meta property="og:url" content="http:&#x2F;&#x2F;hinrick.github.io&#x2F;index.html">
+  <meta name="description" content="建立Databases 和 Tables   這個系列是我在Udemy上面學習MySQL的一些筆記和心得整理，如果有什麼錯誤或是理解的不是很正確的地方，麻煩閱讀人跟我說下唷～歡迎大家一起討論學習 :) Udemy課程連結  建立 Database跟其他語言一樣，Dtatabases 和 Tables 名稱也有命名原則，你可以使用全大寫或是 camelCase，或是其他常見的命名原則。 另外一個命名">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端工程師學資料庫-SQL系列文(一)">
+<meta property="og:url" content="http:&#x2F;&#x2F;hinrick.github.io&#x2F;2019&#x2F;10&#x2F;26&#x2F;%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%B8%80)&#x2F;index.html">
 <meta property="og:site_name" content="被編譯後的人生">
-<meta property="og:description" content="被編譯後的人生">
+<meta property="og:description" content="建立Databases 和 Tables   這個系列是我在Udemy上面學習MySQL的一些筆記和心得整理，如果有什麼錯誤或是理解的不是很正確的地方，麻煩閱讀人跟我說下唷～歡迎大家一起討論學習 :) Udemy課程連結  建立 Database跟其他語言一樣，Dtatabases 和 Tables 名稱也有命名原則，你可以使用全大寫或是 camelCase，或是其他常見的命名原則。 另外一個命名">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;13mjwrBR&#x2F;2019-10-26-2-22-24.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;jd6k2NZR&#x2F;2019-10-26-2-26-14.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;qRnxYVFp&#x2F;2019-10-26-2-38-44.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;VL7nKkNj&#x2F;2019-10-26-2-39-50.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;Vvz101Q6&#x2F;2019-10-26-6-01-39.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;nzwTBhBc&#x2F;2019-10-26-5-07-48.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;cLsDp2xW&#x2F;2019-10-26-5-09-41.png">
+<meta property="og:updated_time" content="2019-10-26T11:24:30.378Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;i.postimg.cc&#x2F;13mjwrBR&#x2F;2019-10-26-2-22-24.png">
 
-<link rel="canonical" href="http://hinrick.github.io/">
+<link rel="canonical" href="http://hinrick.github.io/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%B8%80)/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome: true,
-    isPost: false,
+    isHome: false,
+    isPost: true,
     isPage: false,
     isArchive: false
   };
 </script>
 
-  <title>被編譯後的人生</title>
+  <title>前端工程師學資料庫-SQL系列文(一) | 被編譯後的人生</title>
   
 
 
@@ -181,177 +191,10 @@
             
 
   <div class="posts-expand">
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://hinrick.github.io/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%BA%8C)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Hinrick">
-      <meta itemprop="description" content="被編譯後的人生">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="被編譯後的人生">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%BA%8C)/" class="post-title-link" itemprop="url">前端工程師學資料庫-SQL系列文(二)</a>
-        </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-              
-
-              <time title="Created: 2019-10-26 17:33:15 / Modified: 19:24:27" itemprop="dateCreated datePublished" datetime="2019-10-26T17:33:15+08:00">2019-10-26</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/MySQL%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98/" itemprop="url" rel="index">
-                    <span itemprop="name">MySQL學習筆記</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
       
-          <h1 id="Insert-Data-和一些其他功能介紹"><a href="#Insert-Data-和一些其他功能介紹" class="headerlink" title="Insert Data 和一些其他功能介紹"></a>Insert Data 和一些其他功能介紹</h1><br />
-
-<blockquote>
-<p><em>這個系列是我在Udemy上面學習MySQL的一些筆記和心得整理，如果有什麼錯誤或是理解的不是很正確的地方，麻煩閱讀人跟我說下唷～歡迎大家一起討論學習 :)</em></p>
-<p><em><a href="https://www.udemy.com/course/the-ultimate-mysql-bootcamp-go-from-sql-beginner-to-expert/" target="_blank" rel="noopener">Udemy課程連結</a></em></p>
-</blockquote>
-<ul>
-<li>看起來 table 是有建立成功，但裡面的 columns 呢？</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DESC &lt;table_name&gt;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>透過上面這個語法，可以取得 table 比較詳細的資訊。</li>
-</ul>
-<p><a href="https://postimg.cc/0M1MRyVD" target="_blank" rel="noopener"><img src="https://i.postimg.cc/QtHp7B54/2019-10-26-6-41-40.png" alt="2019-10-26-6-41-40.png"></a></p>
-<ul>
-<li>DESC 就是 describe 描述的意思。</li>
-</ul>
-<h2 id="Inserting-Data"><a href="#Inserting-Data" class="headerlink" title="Inserting Data"></a>Inserting Data</h2><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name(column_name) <span class="keyword">VALUES</span> (<span class="keyword">data</span>);</span><br></pre></td></tr></table></figure>
-<ol>
-<li>table_name : table 的名稱</li>
-<li>column_name : 欄位名稱，這個可以超過一個(就是指table裡面有幾個欄位)</li>
-<li>data : column_name 對應到的值</li>
-</ol>
-<p>舉例:</p>
-<ul>
-<li><p>假設我們有一個 cats 的 table。 裡面有兩個 column 分別是 name 跟 age 。</p>
-</li>
-<li><p>建立的方法 :</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> cats(</span><br><span class="line">    <span class="keyword">name</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    age <span class="built_in">INT</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> cats(<span class="keyword">name</span>, age) <span class="keyword">VALUES</span> (<span class="string">'Luke'</span>, <span class="number">34</span>);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>上面的語法用‘人’的語言來說就是在 <strong>cats</strong> 這個 table 裡面的 <strong>name</strong> 插入 <strong>‘Luke’</strong> 和 <strong>age</strong> 裡插入 <strong>34</strong> 。</li>
-</ul>
-<ul>
-<li>要怎麼確認自己的 insert 有成功的方式？ </li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">from</span> table_name</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://postimg.cc/565MnNCD" target="_blank" rel="noopener"><img src="https://i.postimg.cc/c4241v41/2019-10-26-6-49-15.png" alt="2019-10-26-6-49-15.png"></a></p>
-<ul>
-<li><p>從上面的顯示可以清楚地看出，我們現在有一筆資料。</p>
-</li>
-<li><p>先不用深入理解 select 是什麼？ 不過用’人’的語言來說就是從 table_name 把所有資料都選出來。</p>
-</li>
-</ul>
-<h2 id="Multiple-Insert"><a href="#Multiple-Insert" class="headerlink" title="Multiple Insert"></a>Multiple Insert</h2><ul>
-<li>INSERT value 除了可以 indert 單一 data 也可以一次 insert 多個 data</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> table_name(column_name1, column_name2) </span><br><span class="line"><span class="keyword">VALUES</span></span><br><span class="line">(value1, value2)</span><br><span class="line">(value1, value2)</span><br><span class="line">(value1, value2)</span><br><span class="line">(value1, value2)</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://postimg.cc/YLWLJmH6" target="_blank" rel="noopener"><img src="https://i.postimg.cc/pr0Q5Dc6/2019-10-26-6-52-39.png" alt="2019-10-26-6-52-39.png"></a></p>
-<ul>
-<li>大概長的像上面 john ~</li>
-</ul>
-<h2 id="提示警告"><a href="#提示警告" class="headerlink" title="提示警告"></a>提示警告</h2><ul>
-<li>在SQL不像其他的 coding language 跳出 error。透過 <code>SHOW WARNINGS</code></li>
-</ul>
-<h2 id="NULL-在-SQL-裡的意涵"><a href="#NULL-在-SQL-裡的意涵" class="headerlink" title="NULL 在 SQL 裡的意涵"></a>NULL 在 SQL 裡的意涵</h2><h2 id="什麼是-Primer-Primary-Key"><a href="#什麼是-Primer-Primary-Key" class="headerlink" title="什麼是 Primer || Primary Key ?"></a>什麼是 Primer || Primary Key ?</h2><ul>
-<li><p>在目前的狀況底下，同樣的值可以重複輸入很多次。</p>
-</li>
-<li><p>舉例來說，可輸入很多次 <code>INSERT INTO cats(name, age) VALUES(&#39;Luke&#39;, 34);</code></p>
-</li>
-<li><p>或是直接用 Multiple Insert :</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> cats(<span class="keyword">name</span>, age) </span><br><span class="line"><span class="keyword">VALUES</span>(<span class="string">'Luke'</span>, <span class="number">34</span>),</span><br><span class="line">    (<span class="string">'Luke'</span>, <span class="number">34</span>),</span><br><span class="line">    (<span class="string">'Luke'</span>, <span class="number">34</span>),</span><br><span class="line">    (<span class="string">'Luke'</span>, <span class="number">34</span>),</span><br><span class="line">    (<span class="string">'Luke'</span>, <span class="number">34</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>輸出結果:</li>
-</ul>
-<p><a href="https://postimg.cc/3W8v1WVD" target="_blank" rel="noopener"><img src="https://i.postimg.cc/9XTYW7B1/2019-10-26-6-58-36.png" alt="2019-10-26-6-58-36.png"></a></p>
-<ul>
-<li>加入資料後，感覺上沒什麼問題？不過假設 insert 的 data 值都一樣，如果要找出其中一個？要怎麼辨認？</li>
-</ul>
-<p>- 透過設定不同的 id ， 可以建立在這個table裡獨一無二的 key 。</p>
-<ul>
-<li><p>不過光是在 column 加上 id ， MySQL 並不會幫你擋掉重複的 key 。</p>
-</li>
-<li><p>舉例來說 :</p>
-<ul>
-<li>建立一個 tables 叫做 cats ， 並且有 id, name 跟 age 。 三個不同的 columns ， 建立完畢後你還是可以重複輸入一樣的資料。</li>
-<li>你可以重複輸入 INSERT INTO cats (id, name, age) VALUES (1, ‘Luke’, 34) 十次甚至一百次。</li>
-</ul>
-</li>
-<li><p>為了解決這個問題，在建立 tables 的時候， 在 data_type 後面可以加上 PRIMARY KEY 。</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> cats(</span><br><span class="line">    cat_id <span class="built_in">INT</span> PRIMARY <span class="keyword">KEY</span>, //這邊設定 primary <span class="keyword">key</span> </span><br><span class="line">    <span class="keyword">name</span> <span class="built_in">VARCHAR</span>(<span class="number">50</span>),</span><br><span class="line">    age <span class="built_in">INT</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<ul>
-<li>建立完成完成，我們來試試看輸入重複的 id 。</li>
-</ul>
-<p><a href="https://postimg.cc/CdvzNg3h" target="_blank" rel="noopener"><img src="https://i.postimg.cc/8PGMTkw6/2019-10-26-7-07-56.png" alt="2019-10-26-7-07-56.png"></a></p>
-<ul>
-<li>上面的範例可以看出，我故意把 ‘Linda’ 跟 ‘Phillip’ 的 id 使用相同的，不過因為在建立 cats 的 tables 的時候，有設定 cat_id 當作 primary key。 因此我們得到了一個 error 顯示我們有重複的 key 。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
   
   
-  
-
-        
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
     <link itemprop="mainEntityOfPage" href="http://hinrick.github.io/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%B8%80)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -365,8 +208,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
-            <a href="/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%B8%80)/" class="post-title-link" itemprop="url">前端工程師學資料庫-SQL系列文(一)</a>
+          前端工程師學資料庫-SQL系列文(一)
         </h1>
 
         <div class="post-meta">
@@ -402,7 +244,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="建立Databases-和-Tables"><a href="#建立Databases-和-Tables" class="headerlink" title="建立Databases 和 Tables"></a>建立Databases 和 Tables</h1><br />
+        <h1 id="建立Databases-和-Tables"><a href="#建立Databases-和-Tables" class="headerlink" title="建立Databases 和 Tables"></a>建立Databases 和 Tables</h1><br />
 
 <blockquote>
 <p><em>這個系列是我在Udemy上面學習MySQL的一些筆記和心得整理，如果有什麼錯誤或是理解的不是很正確的地方，麻煩閱讀人跟我說下唷～歡迎大家一起討論學習 :)</em></p>
@@ -510,24 +352,39 @@
 </li>
 </ul>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2019/10/26/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%AB%E5%AD%B8%E8%B3%87%E6%96%99%E5%BA%AB-SQL%E7%B3%BB%E5%88%97%E6%96%87(%E4%BA%8C)/" rel="prev" title="前端工程師學資料庫-SQL系列文(二)">
+                  前端工程師學資料庫-SQL系列文(二) <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
       </footer>
+    
   </article>
   
   
   
 
   </div>
-
-  
-
 
 
           </div>
@@ -556,6 +413,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#建立Databases-和-Tables"><span class="nav-number">1.</span> <span class="nav-text">建立Databases 和 Tables</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建立-Database"><span class="nav-number">1.1.</span> <span class="nav-text">建立 Database</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基本的資料型態"><span class="nav-number">1.2.</span> <span class="nav-text">基本的資料型態</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#先介紹比較常用的-‘INT’-和-‘VARCHAR’"><span class="nav-number">1.3.</span> <span class="nav-text">先介紹比較常用的 ‘INT’ 和 ‘VARCHAR’</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立-tables"><span class="nav-number">1.4.</span> <span class="nav-text">建立 tables</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#刪除建立好的-tables"><span class="nav-number">1.5.</span> <span class="nav-text">刪除建立好的 tables</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
